@@ -1,11 +1,11 @@
 <?php
 require_once("functions.php");
 afficheEntete();
-/*
+
 afficheLigne('salle de bain',4, 3);
 afficheLigne('sallon',2.5, 5);
 afficheLigne('cuisine',6, 2);
-*/
+
 
 $unePiece['piece'] = 'Salle de bain';
 $unePiece['largeur'] = 5;
@@ -29,3 +29,14 @@ foreach ($listePieces as $key => $value){
     //print_r ($value);
     afficheLigne($value);
 }
+
+$tab['prenom'] = 'manal';
+$tab['nom'] = 'combet';
+
+//$tab = ['prenom' => 'manal', 'nom' =>'combet'];
+if (isset($tab['age'])){
+    echo "la variable est definie\n";
+}else{
+    echo "la variable n'est pas definie\n";
+}
+afficheLigne($tab);

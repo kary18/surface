@@ -7,9 +7,12 @@ function afficheEntete()
 //function afficheLigne($piece, $long, $larg)
 function afficheLigne($unePiece)
 {
+$var = "";
+  
   if (
+    isset($unePiece['piece'], $unePiece['longueur'], $unePiece['largeur']) &&
     is_string($unePiece['piece']) && 
-    is_numeric($unePiece['longueur']) && 
+    is_numeric($unePiece['longueur']) &&
     is_numeric($unePiece['largeur']) ) {
 
     printf(
@@ -20,7 +23,7 @@ function afficheLigne($unePiece)
     calculSurface($unePiece['longueur'], $unePiece['largeur'])
 );
   } else {
-    echo "Erreur données:". var_dump($unePiece['longueur']). var_dump($unePiece['largeur']). "\n" ;
+    echo "Erreur données:". var_dump($unePiece). "\n";
   }
 //  echo " $long | $larg | ".calculSurface($long, $larg)." \n";
 }
