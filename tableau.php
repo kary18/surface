@@ -32,3 +32,13 @@ echo "foreach". "\n";
 foreach ($a as $key => $valeur){
     echo"direct acces " . $key. " element:" . $valeur . "\n";
 }
+$b = [];
+$b['nom'] = 'arhmane';
+$b['prenom'] = 'karima';
+$b['age'] = '35';
+
+print_r($b);
+echo "boucle foreach\n";
+foreach ($b as $key => $value) {
+    echo " acces direct" .$key. "element: " .$value."\n";
+}
