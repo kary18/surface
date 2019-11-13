@@ -27,5 +27,5 @@ $listePieces[1] = $uneAutrePiece;
 
 foreach ($listePieces as $key => $value){
     //print_r ($value);
-    afficheLigne($value['piece'], $value['longueur'], $value['largeur']);
+    afficheLigne($value);
 }
